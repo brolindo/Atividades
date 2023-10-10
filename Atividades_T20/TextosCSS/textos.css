@@ -1,0 +1,22 @@
+.content-main {
+    max-width: 428px;
+}
+
+.title-1 {
+    font-size: 42px;
+    line-height: 52px;
+    color: #3745BD;
+    font-weight: 600;
+}
+
+.paragraph-1 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}

@@ -1,0 +1,76 @@
+.list-element {
+    width: 200px;
+    height: 200px;
+    background-color: #c5c5c5;
+    border-radius: 10px;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba*(0, 0, 0, 0.4);
+    padding: 3vh 8vw;
+}
+
+.logo-img {
+    flex-grow: 1;
+    max-width: 150px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+}
+.main-nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    top: 50%;
+    flex-grow: 1;
+}
+.nav-link {
+    text-decoration: none;
+    margin-left: 15px;
+    color: #000000;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover {
+    color: #6ba2e9;
+    border-bottom: 2px solid #6ba2e9;
+}
+
+.nav-link:focus {
+    color: #2f80ed;
+    border-bottom: 2px solid #2f80ed;
+}
+body {
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    border: 1px black solid;
+    height: 400px;
+}
+
+.list-element-blue {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+.list-element-green {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+.list-element-red {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}

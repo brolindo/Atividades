@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <nav></nav>
+        <header></header>
+
+
+        <section>
+            <form>
+                <div>
+                    <label for="nome">Nome: </label>
+                    <div></div>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome.." required>
+                    <p></p>
+                </div>
+                <div>
+                    <label for="email">Email: </label>
+                    <div></div>
+                    <input type="email" id="email" name="email" placeholder="Digite sem email.." required>
+                    <p></p>
+                </div>
+                <div>
+                    <div>
+                        <label for="motivacao">O que te motivou a participar do evento? </label>
+                    </div>
+                    <textarea name="motivacao" id="motivacao" cols="30" rows="5" placeholder="Descreva aqui.."></textarea>
+                    <p></p>
+                </div>
+                <div>
+                    <div>
+                        <label for="modulo">Em qual módulo da Kenzie você está? </label>
+                    </div>
+                    <select name="modulo" id="modulo">
+                        <option value="" selected disabled>Selecione o Módulo</option>
+                        <option value="m1">M1</option>
+                        <option value="m2">M2</option>
+                        <option value="m3">M3</option>
+                        <option value="m4">M4</option>
+                        <option value="m5">M5</option>
+                    </select>
+                    <p></p>
+                </div>
+
+                <div>
+                    <label for="senha">Digite sua senha</label>
+                    <div></div>
+                    <input type="password" name="senha" id="senha" placeholder="Escolha uma senha.." required>
+                    <p></p>
+                </div>
+                <div>
+                    <label for="senhaConf">Confirme sua senha</label>
+                    <div></div>
+                    <input type="password" name="senhaConf" id="senhaConf" placeholder="Confirme sua senha.." required>
+                    <p></p>
+                </div>
+                <div>
+                    <div>
+                        <label for="contato">Deseja receber novidades no seu email? </label>
+                        <p></p>
+                    </div>
+                    <div>
+                        <label for="">Sim</label>
+                        <input type="radio" name="contato" id="contato_s">
+                   
+                        <label for="">Não</label>
+                        <input type="radio" name="contato" id="contato_n">
+                    </div>       
+                </div>
+                <p></p>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+
+        <aside></aside>
+    </main>
+
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,27 @@
+body {
+    height: 95vh;
+}
+
+nav {
+    height: 50px;
+    background-color: aqua;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 5px 5px #dddddd;
+    margin-bottom: 40px;
+}
+
+main {
+    background-color: aliceblue;
+    display: flex;
+}
+
+footer {
+    background-color: black;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

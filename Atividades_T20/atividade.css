@@ -1,0 +1,52 @@
+
+/* Aqui começa o arquivo CSS ignorado o  ResetCSS acima */
+body {
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 25px;
+    padding: 5px;
+    margin: 20px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+h2{
+    text-align: left;
+    font-size: 25px;
+    line-height: 2.5;
+    font-weight: 600;
+}
+
+.text-blue {
+    color: #0000ff;
+}
+
+.bg-blue {
+    border: 1px solid blue;
+    padding: 5px;
+    background-color: #0000ff;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+li {
+    text-decoration: underline;
+}
+
+.footer{
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+    box-sizing: content-box;
+    padding: 5px;
+    margin-top: ;
+}
