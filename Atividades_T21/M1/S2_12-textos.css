@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik+Mono+One&display=swap");
+
+body {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    color: rgb(256, 256, 256);
+    background-image: url("https://images.hindustantimes.com/tech/img/2023/01/03/960x540/KembleCascade_Lease_960_1672733828590_1672733846283_1672733846283.jpg");
+}
+
+.titulo-principal {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 2;
+}
+
+.titulo-secundario {
+    font-size: 22px;
+}
+
+.span-titulo-secundario, a {
+    color: rgb(254, 188, 50);
+}
+
+.paragrafo-titulo {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    opacity: 0.8;
+}
