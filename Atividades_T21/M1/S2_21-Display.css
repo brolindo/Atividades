@@ -1,0 +1,30 @@
+.exercicio-1 {
+    display: inline;
+    border: black dashed;
+    font-size: 3em;
+    list-style: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.exercicio-2 { 
+    text-decoration: none;
+    color: #fff;
+    background-color: #308ebd;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    display: inline-block;
+}
+
+.exercicio-3 {
+    display: block;
+    text-decoration: none;
+  color: #308ebd;
+  border-bottom: 2px solid #308ebd;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
