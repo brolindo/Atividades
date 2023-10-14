@@ -1,0 +1,17 @@
+.list {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+
+    align-items: center;
+    justify-content: space-around;
+}
+
+.items {
+    width: 200px;
+    background-color: #c5c5c5;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    justify-content: ;
+}
