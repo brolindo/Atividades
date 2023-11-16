@@ -119,18 +119,117 @@ function filtraPorMarca(marca) {
 console.log(filtraPorMarca('ford'));
 
 // Exercício 04
+
+function arrayToLowerCase(arr) {
+    let arrLowerCase = [];
+    if (arr.length > 0){
+        for (let i = 0; i < arr.length; i++) {
+            arrLowerCase.push(arr[i].toLowerCase());
+        }
+    }
+    return arrLowerCase;
+}
 function filtraPorAcessorio(acessorio) {
-    let acessorioDoCarro = [];
+    let carrosComAcessorio = [];
 
     for (let i = 0; i < carros.length; i++){
-        if (carros[i].acessorios.includes(acessorio)) {
-            acessorioDoCarro.push(carros[i]);
+        let acessorioDoCarro = arrayToLowerCase(carros[i].acessorios);
+
+        if (acessorioDoCarro.includes(acessorio.toLowerCase()) && 
+            acessorioDoCarro.length != 0) {
+                carrosComAcessorio.push(carros[i]);
         } 
     }
-    if(acessorioDoCarro.length === 0) {
+    if(carrosComAcessorio.length === 0) {
         return `Nenhum carro possui ${acessorio}`;
     }
-     return acessorioDoCarro;
+     return carrosComAcessorio;
 }
 
-console.log(filtraPorAcessorio("alarme"))
+console.log(filtraPorAcessorio("alarme"));
+
+// Exercício 05
+function eCarroCompleto() {
+    let carrosCompletos = [];
+    for (let i = 0; i < carros.length; i++) {
+        if (carros[i].completo) {
+            carrosCompletos.push(carros[i]);
+        }
+    }
+    return carrosCompletos;
+}
+console.log("ex 05");
+console.log(eCarroCompleto());
+
+// Exercício 06
+function adicionaCarro() {
+    let novoCarro = {
+        modelo: "",
+        marca: "",
+        ano: "",
+        cor: "",
+        completo: false,
+        acessorio: "",
+        preco: 0
+    };
+    carros.push(novoCarro);
+    return carros;
+}
+
+let novalista = adicionaCarro();
+console.log(novalista);
+
+// Exercício 07
+function removeCarro(lista, indice) {
+    if (indice >= lista.length) {
+        return "Indice inválido"
+    }
+    
+    let novaLista = [];  
+    /*  Não consegui usar o metodo splice
+        depois editar essa logica aqui*/
+    for(let i = 0; i < lista.length; i++){
+        if (i != indice) {
+            novaLista.push(lista[i]);
+        }
+    }
+    return novaLista;
+}
+
+console.log("ex 07")
+console.log(carros);
+console.log(removeCarro(carros, 50));
+
+// Exercício 08
+function contaCarrosNovos() {
+    let carrosNovos = [];
+
+    for (let i = 0; i < carros.length; i++){
+        let anoDoCarro = parseInt(carros[i].ano);
+
+        if (2023 - anoDoCarro <= 10) {
+            carrosNovos.push(carros[i]);
+        }
+    }
+    return carrosNovos;
+}
+console.log(contaCarrosNovos());
+
+//Exercício 09
+console.log("quem são os donos");
+function criaPessoa(nome, telefone){
+    const pessoa = {
+        Nome: `${nome}`,
+        Telefone: `${telefone}`
+    };
+    return pessoa;
+}
+
+let dono = criaPessoa("Brolin", 31996883269);
+
+function quemSaoOsDonos (listaDeCarros, indice, pessoa) {
+    listaDeCarros[indice].Donos = pessoa;
+    return listaDeCarros;
+}
+
+console.log(quemSaoOsDonos(carros, 3, dono));
